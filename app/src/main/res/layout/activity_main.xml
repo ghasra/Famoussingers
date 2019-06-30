@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/celinedion"
+        android:contentDescription="@string/cliondionoiv"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        />
+
+
+    <ScrollView
+        android:id="@+id/scrollDown"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/imageView1"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@id/btnws"
+        >
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hellow"
+
+            android:textSize="18sp"
+            />
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnws"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/personal_website"
+        android:onClick="openWS"
+        android:layout_alignParentBottom="true"
+
+        />
+
+    <Button
+        android:id="@+id/btnfb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btnws"
+        android:layout_marginLeft="30dp"
+        android:text="@string/official_fb"
+        android:onClick="openFB"
+        android:layout_alignParentBottom="true"
+
+        />
+
+
+</RelativeLayout>
